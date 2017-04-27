@@ -1,2 +1,4 @@
 django
 templated_docs
+python-docx
+docx
