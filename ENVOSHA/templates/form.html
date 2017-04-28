@@ -46,6 +46,10 @@
                   </div>
                   <div class="x_content">
                     <br />
+                      <form action='/post/form.html' method='post'>{% csrf_token %}
+                          {{ form.as_p }}
+                          <input type='submit' value='Submit'/>
+                      </form>
                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                       <div class="form-group">

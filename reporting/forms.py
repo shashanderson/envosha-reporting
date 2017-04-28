@@ -3,7 +3,7 @@ from django.contrib.auth.forms import AuthenticationForm
 
 
 # If you don't do this you cannot use Bootstrap CSS
-from reporting.models import Customer
+from reporting.models import Customer, Company
 
 
 class LoginForm(AuthenticationForm):
@@ -13,14 +13,6 @@ class LoginForm(AuthenticationForm):
                                widget=forms.TextInput(attrs={'class': 'form-control', 'name': 'password'}))
 
 
-class InvoiceForm(forms.Form):
-    FORMAT_CHOICES = (
-        ('pdf', 'PDF'),
-        ('docx', 'MS Word'),
-        ('html', 'HTML'),
-    )
-    number = forms.CharField(label='Invoice #')
-    customer = forms.ModelChoiceField(queryset=Customer.objects.all())
-    subject = forms.CharField()
-    amount = forms.DecimalField()
-    format = forms.ChoiceField(choices=FORMAT_CHOICES)
+
+
+

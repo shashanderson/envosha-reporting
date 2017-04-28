@@ -1,0 +1,13 @@
+{% load staticfiles %}
+<h1>Company</h1>
+<ul>
+    {% for company in object_list %}
+    <li>{{ company.company_name }}  :
+    <a href="{% url "company_edit" company.id %}">{{ company.company_address }}</a>
+    <a href="{% url "company_delete" company.id %}">delete</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url "company_new" %}">New</a>
+
