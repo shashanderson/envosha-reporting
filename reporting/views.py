@@ -28,3 +28,18 @@ def invoice_view(request):
     else:
         return render(request, 'map.html', {'form': form})
 
+@login_required(login_url="login/")
+def form_view(request):
+    return render(request, "form.html")
+
+
+@login_required(login_url="login/")
+def index_view(request):
+    return render(request, "index.html")
+
+
+@login_required(login_url="login/")
+def dashboard_view(request):
+    return render(request, "dashboard.html")
+
+
