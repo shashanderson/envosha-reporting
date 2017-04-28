@@ -1,8 +1,8 @@
 from __future__ import unicode_literals
 
+from django.core.urlresolvers import reverse
 # Create your models here.
 from django.db import models
-from django.core.urlresolvers import reverse
 
 
 class Customer(models.Model):
@@ -33,7 +33,7 @@ class Company(models.Model):
         unique_together = ('company_name', 'company_country')
 
     def __unicode__(self):
-        return self.name
+        return self.company_name
 
     def get_absolute_url(self):
         return reverse('company_edit', kwargs={'pk': self.pk})
@@ -72,4 +72,3 @@ class Parameter(models.Model):
     created_by = models.CharField(max_length=200, null=True, blank=True)
     updated_at = models.DateTimeField(null=True, blank=True)
     updated_by = models.CharField(max_length=200, null=True, blank=True)
-

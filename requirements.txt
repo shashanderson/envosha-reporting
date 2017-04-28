@@ -2,3 +2,4 @@ django
 templated_docs
 python-docx
 docx
+django-bootstrap3
