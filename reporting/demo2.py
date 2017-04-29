@@ -3,6 +3,8 @@ import re
 
 from docx import Document
 
+from reporting.models import Company
+
 
 def docx_replace_regex(doc_obj, regex, replace):
     for p in doc_obj.paragraphs:
@@ -20,12 +22,15 @@ def docx_replace_regex(doc_obj, regex, replace):
                 docx_replace_regex(cell, regex, replace)
 
 
-regex1 = re.compile(r"la")
-replace1 = r"ma"
-regex2 = re.compile(r"a")
-replace2 = r"xxxxxxxxxxx"
-filename = "ENVOSHA/templates/test.docx"
+company_name = Company.objects.filter(id=37)
+print company_name
+
+regex1 = re.compile(r"Baseline")
+replace1 = r"motamail"
+regex2 = re.compile(r"{{ naaaaaam }}")
+replace2 = r"{{ xna }} "
+filename = "ENVOSHA/templates/CEM_Report.docx"
 doc = Document(filename)
 docx_replace_regex(doc, regex1, replace1)
 docx_replace_regex(doc, regex2, replace2)
-doc.save('result1.docx')
+doc.save('CEM_Report_new.docx')

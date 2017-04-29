@@ -17,6 +17,8 @@ INSTALLED_APPS = [
     'ENVOSHA',
     'reporting',
     'templated_docs',
+    'bootstrapform',
+
 
 ]
 
@@ -32,7 +34,7 @@ MIDDLEWARE_CLASSES = [
 ]
 
 LOGIN_REDIRECT_URL = '/'  # It means home view
-TEMPLATED_DOCS_LIBREOFFICE_PATH = 'C:/Program Files/LibreOffice 5/program'
+
 
 TEMPLATES = [
     {
@@ -133,3 +135,4 @@ try:
 except ImportError:
     pass
 
+#DEBUG = False

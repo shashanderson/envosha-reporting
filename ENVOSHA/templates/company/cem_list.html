@@ -4,9 +4,11 @@
 
 {% block content %}
 
+
+
     <div class="page-title">
         <div class="title_left">
-            <h3>Company</h3>
+            <h3>CEM </h3>
         </div>
 
         <div class="title_right">
@@ -21,11 +23,9 @@
         </div>
     </div>
 
-
-
- <a class="btn btn-app" href="{% url "company_new" %}">
+ <a class="btn btn-app" href="{% url "cem_new" %}">
                       <span class="badge bg-green">1</span>
-                      <i class="fa fa-plus-circle"></i> Add Company
+                      <i class="fa fa-plus-circle"></i> Add CEM Form
                     </a>
 
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -56,29 +56,19 @@
                       <thead>
                         <tr>
                           <th>Company Name</th>
-                          <th>Company Address</th>
-                          <th>Country</th>
-                          <th>Contact No</th>
-                          <th>Preson Incharge</th>
-                          <th>Consultant</th>
                           <th>Created At</th>
                           <th>Link</th>
                           <th>Delete</th>
                         </tr>
                       </thead>
 
-{% for company in object_list %}
+{% for cems in object_list %}
                       <tbody>
                         <tr>
-                          <td><a href="{% url "company_edit" company.id %}">{{ company.company_name }}</td>
-                          <td>{{ company.company_address }}</td>
-                          <td>{{ company.company_country }}</td>
-                          <td>{{ company.company_contact_no }}</td>
-                          <td>{{ company.company_pic }}</td>
-                          <td>{{ company.consultant }}</td>
-                          <td>{{ company.created_at }}</td>
-                          <td><a href="{% url "company_edit" company.id %}">View</td>
-                          <td><a href="{% url "company_delete" company.id %}">Delete</a></td>
+                          <td><a href="{% url "cem_edit" cems.id %}">{{ cems.company }}</td>
+                          <td>{{ cems.area_personal_type }}</td>
+                          <td><a href="{% url "cem_edit" cems.id %}">View</td>
+                          <td><a href="{% url "cem_delete" cems.id %}">Delete</a></td>
                         </tr>
 
                       </tbody>{% endfor %}
@@ -86,5 +76,7 @@
                   </div>
                 </div>
               </div>
+
+
 
 {% endblock %}

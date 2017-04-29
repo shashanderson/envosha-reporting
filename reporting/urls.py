@@ -11,6 +11,14 @@ urlpatterns = [
     url(r'^new$', views.company_create, name='company_new'),
     url(r'^edit/(?P<pk>\d+)$', views.company_update, name='company_edit'),
     url(r'^delete/(?P<pk>\d+)$', views.company_delete, name='company_delete'),
+    url(r'^cem$', views.cem_list, name='cem_list'),
+    url(r'^newcem$', views.cem_create, name='cem_new'),
+    url(r'^editcem/(?P<pk>\d+)$', views.cem_update, name='cem_edit'),
+    url(r'^deletecem/(?P<pk>\d+)$', views.cem_delete, name='cem_delete'),
+    url(r'^cemreports$', views.cem_reports, name='cem_reports'),
+    url(r'^docx_replace_regex/(?P<regex>\d+)/(?P<replace>(\d+))/$', views.docx_replace_regex, name='docx_replace_regex'),
+
+
 
 
 ]

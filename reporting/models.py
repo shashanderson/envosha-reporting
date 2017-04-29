@@ -63,6 +63,13 @@ class AreaPersonalType(models.Model):
     updated_by = models.CharField(max_length=200, null=True, blank=True)
 
 
+    def __unicode__(self):
+        return self.company
+
+    def get_absolute_url(self):
+        return reverse('cem_edit', kwargs={'pk': self.pk})
+
+
 class Parameter(models.Model):
     company = models.CharField(max_length=200)
     area_personal_type = models.CharField(max_length=200)
