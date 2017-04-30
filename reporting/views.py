@@ -139,6 +139,7 @@ def cem_delete(request, pk, template_name='company/cem_confirm_delete.html'):
 
 
 def docx_replace_regex(doc_obj, regex, replace):
+
     for p in doc_obj.paragraphs:
         if regex.search(p.text):
             inline = p.runs
@@ -154,20 +155,24 @@ def docx_replace_regex(doc_obj, regex, replace):
                 docx_replace_regex(cell, regex, replace)
 
 
-company_name = Company.objects.filter(id=37)
-print company_name
+def initiate_replace(param1,param2):
+    filename = "ENVOSHA/templates/CEM_Report.docx"
+    doc = Document(filename)
+    docx_replace_regex(doc, param1, param2)
+    doc.save('ENVOSHA/static/CEM_Report_new.docx')
 
-regex1 = re.compile(r"Baseline")
-replace1 = r"{{ company_name }}"
-regex2 = re.compile(r"{{ naaaaaam }}")
-replace2 = r"{{ xna }} "
-filename = "ENVOSHA/templates/CEM_Report.docx"
-doc = Document(filename)
 
-docx_replace_regex(doc, regex1, replace1)
-docx_replace_regex(doc, regex1, replace1)
-docx_replace_regex(doc, regex2, replace2)
-doc.save('ENVOSHA/static/CEM_Report_new.docx')
+# regex1 = re.compile(r"Baseline")
+# replace1 = r"{{ company_name }}"
+# regex2 = re.compile(r"{{ naaaaaam }}")
+# replace2 = r"{{ xna }} "
+# filename = "ENVOSHA/templates/CEM_Report.docx"
+# doc = Document(filename)
+#
+# docx_replace_regex(doc, regex1, replace1)
+# docx_replace_regex(doc, regex1, replace1)
+# docx_replace_regex(doc, regex2, replace2)
+# doc.save('ENVOSHA/static/CEM_Report_new.docx')
 
 
 
@@ -194,3 +199,5 @@ def cem_reports(request, template_name='company/cem_reports.html'):
     data = {}
     data['object_list'] = companys
     return render(request, template_name, data)
+
+
