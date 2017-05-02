@@ -139,6 +139,7 @@ def cem_delete(request, pk, template_name='company/cem_confirm_delete.html'):
 
 
 def docx_replace_regex(doc_obj, regex, replace):
+    regex = re.compile(r"Summary")
 
     for p in doc_obj.paragraphs:
         if regex.search(p.text):
@@ -155,10 +156,10 @@ def docx_replace_regex(doc_obj, regex, replace):
                 docx_replace_regex(cell, regex, replace)
 
 
-def initiate_replace(param1,param2):
+def initiate_replace(self,regex, replace):
     filename = "ENVOSHA/templates/CEM_Report.docx"
     doc = Document(filename)
-    docx_replace_regex(doc, param1, param2)
+    docx_replace_regex(doc, regex, replace)
     doc.save('ENVOSHA/static/CEM_Report_new.docx')
 
 

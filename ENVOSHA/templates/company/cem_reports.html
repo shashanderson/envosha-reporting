@@ -46,7 +46,7 @@
                         <tr>
                           <td>{{ company.company_name }}</td>
                           <td>{{ company.created_at }}</td>
-                          <td><a href="{% url 'docx_replace_regex' regex=1 replace=1  %}" >Generate Link</a></td>
+                          <td><a href="{% url 'initiate_replace' regex=1 replace=1  %}" >Generate Link</a></td>
                           <td><a href="../static/CEM_Report_new.docx" >Download Link</a></td>
                         </tr>
 

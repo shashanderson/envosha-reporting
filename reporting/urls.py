@@ -16,7 +16,7 @@ urlpatterns = [
     url(r'^editcem/(?P<pk>\d+)$', views.cem_update, name='cem_edit'),
     url(r'^deletecem/(?P<pk>\d+)$', views.cem_delete, name='cem_delete'),
     url(r'^cemreports$', views.cem_reports, name='cem_reports'),
-    url(r'^docx_replace_regex/(?P<regex>\d+)/(?P<replace>(\d+))/$', views.docx_replace_regex, name='docx_replace_regex'),
+    url(r'^initiate_replace/(?P<regex>\d+)/(?P<replace>(\d+))/$', views.initiate_replace, name='initiate_replace'),
 
 
 
