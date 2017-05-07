@@ -28,6 +28,7 @@ class Company(models.Model):
     created_by = models.CharField(max_length=200, null=True, blank=True)
     updated_at = models.DateTimeField(null=True, blank=True)
     updated_by = models.CharField(max_length=200, null=True, blank=True)
+    is_active = models.CharField(max_length=200, null=True, blank=True)
 
     class Meta:
         unique_together = ('company_name', 'company_country')
@@ -61,6 +62,7 @@ class AreaPersonalType(models.Model):
     created_by = models.CharField(max_length=200, null=True, blank=True)
     updated_at = models.DateTimeField(null=True, blank=True)
     updated_by = models.CharField(max_length=200, null=True, blank=True)
+    is_active = models.CharField(max_length=200, null=True, blank=True)
 
 
     def __unicode__(self):
@@ -68,6 +70,8 @@ class AreaPersonalType(models.Model):
 
     def get_absolute_url(self):
         return reverse('cem_edit', kwargs={'pk': self.pk})
+    def get_absolute_url(self):
+        return reverse('book_list', kwargs={'pk': self.pk})
 
 
 class Parameter(models.Model):
@@ -79,3 +83,4 @@ class Parameter(models.Model):
     created_by = models.CharField(max_length=200, null=True, blank=True)
     updated_at = models.DateTimeField(null=True, blank=True)
     updated_by = models.CharField(max_length=200, null=True, blank=True)
+    is_active = models.CharField(max_length=200, null=True, blank=True)

@@ -67,13 +67,10 @@
                       <li><a href="">Dashboard</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-edit"></i> Data Entry <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                         <li><a href="new">Add New Company</a></li>
-                       <li><a href="newcem">Add New CEM</a></li>
-                        <li><a href=""></a></li>
                         <li><a href="company">Company Listing</a></li>
-                        <li><a href="cem">CEM Form Listing</a></li>
 
 
                     </ul>
@@ -82,6 +79,7 @@
                     <ul class="nav child_menu">
                       <li><a href="cemreports">CEM Worksheet</a></li>
                       <li><a href="cemreports">CEM Chain Of Custody </a></li>
+                      <li><a href="cemreports">CEM Lab Analysis Result </a></li>
                       <li><a href="cemreports">CEM Main Reports</a></li>
                     </ul>
                   </li>
@@ -183,9 +181,11 @@
                 {% block content %}
 	            {% endblock %}
 
+ <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
 
-
+  <script src="{% static 'books/js/books.js' %}"></script>
     <!-- jQuery -->
     <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
     <!-- Bootstrap -->
@@ -221,7 +221,13 @@
     <script src="{% static 'starrr/dist/starrr.js' %}"></script>
     <!-- Custom Theme Scripts -->
     <script src="{% static 'js/custom.min.js' %}"></script>
-    <script>
+                         <!-- jQuery -->
+    <!-- FastClick -->
+    <script src="{% static 'fastclick/lib/fastclick.js' %}"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="{% static 'jQuery-Smart-Wizard/js/jquery.smartWizard.js' %}"></script>
+
+   <script>
 
          $(document).ready(function(){
       var i=1;
@@ -242,9 +248,7 @@
 
 
 });
-</script>
 
-<script>
 
     var room = 1;
 function education_fields() {
@@ -261,7 +265,64 @@ function education_fields() {
    function remove_education_fields(rid) {
 	   $('.removeclass'+rid).remove();
    }
+
+
+
+
+    	$(document).ready(function(){
+    //@naresh action dynamic childs
+    var next_exp = 0;
+    $("#add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#fielda" + next_exp;
+        var addRemove = "#fielda" + (next_exp);
+        next_exp = next_exp + 1;
+        var newInp = '<div id="fielda'+ next_exp +'" name="field1'+ next_exp +'"><hr/>  <div class="form-group"> <label for="options">Options</label> <div data-role="dynamic-fields"> <div class="form-inline"> <div class="form-group"> <div class="col-md-12"> <input type="radio" name="reason" value="Answer"> Answer <span>-</span> <label class="sr-only" for="field-name">Option</label> <input type="text" class="form-control" id="field-name" placeholder="Field Name"> </div> </div> <button class="btn btn-danger" data-role="remove"> <span class="glyphicon glyphicon-remove"></span> </button> <button class="btn btn-primary" data-role="add"> <span class="glyphicon glyphicon-plus"></span> </button> </div><!-- /div.form-inline --> </div> <!-- /div[data-role="dynamic-fields"] --> </div> <hr/></div></div>';
+        var newInput = $(newInp);
+
+        var removeBtn = '<div class="form-group"><button id="remove' + (next_exp - 1) + '" class="btn btn-danger remove-me" >Remove</button></div></div></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#fielda" + next_exp).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next_exp);
+
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#fielda" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+
+
+
+		});
 </script>
+
+                      <style>
+
+                          html, body {
+    padding-top: 20px;
+}
+
+[data-role="dynamic-fields"] > .form-inline + .form-inline {
+    margin-top: 0.5em;
+}
+
+[data-role="dynamic-fields"] > .form-inline [data-role="add"] {
+    display: none;
+}
+
+[data-role="dynamic-fields"] > .form-inline:last-child [data-role="add"] {
+    display: inline-block;
+}
+
+[data-role="dynamic-fields"] > .form-inline:last-child [data-role="remove"] {
+    display: none;
+}
+                      </style>
 
   </body>
 </html>

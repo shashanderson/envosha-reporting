@@ -62,7 +62,8 @@
                           <th>Preson Incharge</th>
                           <th>Consultant</th>
                           <th>Created At</th>
-                          <th>Link</th>
+                          <th>Edit Company</th>
+                          <th>View Form</th>
                           <th>Delete</th>
                         </tr>
                       </thead>
@@ -77,6 +78,7 @@
                           <td>{{ company.company_pic }}</td>
                           <td>{{ company.consultant }}</td>
                           <td>{{ company.created_at }}</td>
+                          <td><a href="{% url "company_edit" company.id %}">View</td>
                           <td><a href="{% url "company_edit" company.id %}">View</td>
                           <td><a href="{% url "company_delete" company.id %}">Delete</a></td>
                         </tr>

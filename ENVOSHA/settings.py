@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'reporting',
     'templated_docs',
     'bootstrapform',
+    'widget_tweaks',
 
 
 ]

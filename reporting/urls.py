@@ -16,6 +16,10 @@ urlpatterns = [
     url(r'^editcem/(?P<pk>\d+)$', views.cem_update, name='cem_edit'),
     url(r'^deletecem/(?P<pk>\d+)$', views.cem_delete, name='cem_delete'),
     url(r'^cemreports$', views.cem_reports, name='cem_reports'),
+    url(r'^books/(?P<pk>\d+)$', views.book_list, name='book_list'),
+    url(r'^books/create/$', views.book_create, name='book_create'),
+    url(r'^books/(?P<pk>\d+)/update/$', views.book_update, name='book_update'),
+    url(r'^books/(?P<pk>\d+)/delete/$', views.book_delete, name='book_delete'),
     url(r'^initiate_replace/(?P<regex>\d+)/(?P<replace>(\d+))/$', views.initiate_replace, name='initiate_replace'),
 
 

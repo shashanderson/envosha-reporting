@@ -2,14 +2,18 @@ import re
 
 from django.contrib.auth.decorators import login_required
 from django.forms import ModelForm
+from django.http import JsonResponse
 # Create your views here.
 # this login required decorator is to not allow to any
 # view without authenticating
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import redirect
+from django.shortcuts import render, get_object_or_404
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from django.template.loader import render_to_string
 from docx import Document
 
+from reporting.forms import BookForm
 from reporting.models import Company, AreaPersonalType
 
 
@@ -156,7 +160,7 @@ def docx_replace_regex(doc_obj, regex, replace):
                 docx_replace_regex(cell, regex, replace)
 
 
-def initiate_replace(self,regex, replace):
+def initiate_replace(self, regex, replace):
     filename = "ENVOSHA/templates/CEM_Report.docx"
     doc = Document(filename)
     docx_replace_regex(doc, regex, replace)
@@ -202,3 +206,64 @@ def cem_reports(request, template_name='company/cem_reports.html'):
     return render(request, template_name, data)
 
 
+def book_list(request,pk):
+    books = AreaPersonalType.objects.filter(company=pk,area_personal_type='area')
+    personal = AreaPersonalType.objects.filter(company=pk, area_personal_type='personal')
+    return render(request, 'books/book_list.html', {'books': books,'personals': personal})
+
+
+def save_book_form(request, form, template_name):
+    data = dict()
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            data['form_is_valid'] = True
+            books = AreaPersonalType.objects.all()
+            data['html_book_list'] = render_to_string('books/includes/partial_book_list.html', {
+                'books': books
+            })
+        else:
+            data['form_is_valid'] = False
+    context = {'form': form}
+    data['html_form'] = render_to_string(template_name, context, request=request)
+    return JsonResponse(data)
+
+
+def book_create(request):
+    if request.method == 'POST':
+        form = BookForm(request.POST)
+    else:
+        form = BookForm()
+    return save_book_form(request, form, 'books/includes/partial_book_create.html')
+
+
+def book_update(request, pk):
+    book = get_object_or_404(AreaPersonalType, pk=pk)
+    if request.method == 'POST':
+        form = BookForm(request.POST, instance=book)
+    else:
+        form = BookForm(instance=book)
+    return save_book_form(request, form, 'books/includes/partial_book_update.html')
+
+
+def book_delete(request, pk):
+    book = get_object_or_404(AreaPersonalType, pk=pk)
+    data = dict()
+    if request.method == 'POST':
+        book.delete()
+        data['form_is_valid'] = True
+        books = AreaPersonalType.objects.all()
+        data['html_book_list'] = render_to_string('books/includes/partial_book_list.html', {
+            'books': books
+        })
+    else:
+        context = {'book': book}
+        data['html_form'] = render_to_string('books/includes/partial_book_delete.html', context, request=request)
+    return JsonResponse(data)
+
+
+def comp_list(request,pk):
+    comp = Company.objects.filter(id=pk)
+    print comp
+
+    return render(request, 'books/book_list.html', {'comp': comp})

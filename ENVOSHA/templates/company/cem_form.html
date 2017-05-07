@@ -2,241 +2,158 @@
 {% block content %}
 
 
-<!-- page content -->
+<!-- Smart Wizard -->
+
+<div id="wizard" class="form_wizard wizard_horizontal">
+    <ul class="wizard_steps">
+        <li>
+            <a href="#step-1">
+                <span class="step_no">1</span>
+                <span class="step_descr">
+                                              Step 1<br/>
+                                              <small>Preparing Worksheet</small>
+                                          </span>
+            </a>
+        </li>
+        <li>
+            <a href="#step-2">
+                <span class="step_no">2</span>
+                <span class="step_descr">
+                                              Step 2<br/>
+                                              <small>Preparing Chain Of Custody (COC)</small>
+                                          </span>
+            </a>
+        </li>
+        <li>
+            <a href="#step-3">
+                <span class="step_no">3</span>
+                <span class="step_descr">
+                                              Step 3<br/>
+                                              <small>Report Preparation</small>
+                                          </span>
+            </a>
+        </li>
+        <li>
+            <a href="#step-4">
+                <span class="step_no">4</span>
+                <span class="step_descr">
+                                              Step 4<br/>
+                                              <small>Laboratory Results</small>
+                                          </span>
+            </a>
+        </li>
+    </ul>
+
+    <div id="step-1">
+        <form class="form-horizontal form-label-left">
 
 
-<div class="page-title">
-    <div class="title_left">
-        <h3>CEM Form </h3>
-    </div>
-
-    <div class="title_right">
-        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="clearfix"></div>
-<div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel">
-            <div class="x_title">
-                <h2>CEM Form Details
-                    <small>Input CEM Info</small>
-                </h2>
-                <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Settings 1</a>
-                            </li>
-                            <li><a href="#">Settings 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-            <div class="x_content">
-                <br/>
-
-
-                <div align="center">
-                    <div class="x_panel">
-                        <div class="x_title">
-                            <h2>Area
-                                <small>Add Area</small>
-                            </h2>
-                            <div class="container">
-                                <ul class="nav navbar-right panel_toolbox">
-                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Settings 1</a>
-                                            </li>
-                                            <li><a href="#">Settings 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                    </li>
-                                </ul>
-                                <div class="row clearfix">
-                                    <div class="col-md-12 column">
-                                        <table class="table table-bordered table-hover" id="tab_logic">
-                                            <thead>
-                                            <tr>
-                                                <th class="text-center">
-                                                    #
-                                                </th>
-                                                <th class="text-center">
-                                                    Point
-                                                </th>
-                                                <th class="text-center">
-                                                    Work Unit
-                                                </th>
-                                                <th class="text-center">
-                                                    Method
-                                                </th>
-                                                <th class="text-center">
-                                                    Flow rate
-                                                </th>
-                                                <th class="text-center">
-                                                    Media
-                                                </th>
-                                                <th class="text-center">
-                                                    Technique
-                                                </th>
-                                                <th class="text-center">
-                                                    Parameter
-                                                </th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr id='addr0'>
-                                                <td>
-                                                    1
-                                                </td>
-                                                <td>
-                                                    <input type="text" name='Point' placeholder='Point' class="form-control"/>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name='Work Unit' placeholder='Work Unit' class="form-control"/>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name='Method' placeholder='Method' class="form-control"/>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name='Flow rate' placeholder='Flow rate' class="form-control"/>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name='Media' placeholder='Media' class="form-control"/>
-                                                </td>
-                                                <td>
-                                                    <input type="text" name='Technique' placeholder='Technique' class="form-control"/>
-                                                </td>
-                                                <td>
-                                                    <div class="col-md-9 col-sm-9 col-xs-12">
-                                                        <input id="tags_1" type="text" name='Parameter' placeholder='Parameter' class="tags form-control" value="test , test2"/></div>
-                                                    <div id="suggestions-container" style="position: relative; float: left; width: 250px; margin: 10px;"></div>
-                                                </td>
-                                            </tr>
-                                            <tr id='addr1'></tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <a id="add_row" class="btn btn-primary pull-left ">Add Row</a><a id='delete_row' class="pull-right btn btn-danger" >Delete Row</a>
+            <div class="container" >
+                <div class="col-md-9" >
+                    <form class="form-horizontal" action="" method="POST" id="myform">
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Company<span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
                             </div>
-                            <div class="row"></div>
-                            <div class="row"></div>
-                            <br>
-                            <br>
-
-                             <h2>Personal
-                    <small>Add Personal</small>
-                </h2>
-                            <div class="row"></div>
-
-                            <br>
-
-                            <div class="panel panel-default">
-
-  <div class="panel-body">
-
-  <div id="education_fields">
-
-        </div>
-       <div class="col-sm-3 nopadding">
-  <div class="form-group">
-    <input type="text" class="form-control" id="Point" name="Point[]" value="" placeholder="Point">
-  </div>
-</div>
-<div class="col-sm-3 nopadding">
-  <div class="form-group">
-    <input type="text" class="form-control" id="Work Unit" name="Work Unit[]" value="" placeholder="Work Unit">
-  </div>
-</div>
-<div class="col-sm-3 nopadding">
-  <div class="form-group">
-    <input type="text" class="form-control" id="Method" name="Method[]" value="" placeholder="Method">
-  </div>
-</div>
-<div class="col-sm-3 nopadding">
-  <div class="form-group">
-    <input type="text" class="form-control" id="Flow Rate" name="Flow Rate[]" value="" placeholder="Flow Rate">
-  </div>
-</div>
-<div class="col-sm-3 nopadding">
-  <div class="form-group">
-    <input type="text" class="form-control" id="Media" name="Media[]" value="" placeholder="Media">
-  </div>
-</div>
-<div class="col-sm-3 nopadding">
-  <div class="form-group">
-    <input type="text" class="form-control" id="Technique" name="Technique[]" value="" placeholder="Technique">
-  </div>
-</div>
-<div class="col-sm-3 nopadding">
-  <div class="form-group">
-    <input type="text" class="form-control" id="Parameter" name="Parameter[]" value="" placeholder="Parameter">
-  </div>
-</div>
-
-<div class="col-sm-3 nopadding">
-  <div class="form-group">
-    <div class="input-group">
-      <div class="input-group-btn">
-        <button class="btn btn-success" type="button"  onclick="education_fields();"> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> </button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="clear"></div>
-
-  </div>
-  <div class="panel-footer"><small>Press <span class="glyphicon glyphicon-plus gs"></span> to add another form field :)</small>, <small>Press <span class="glyphicon glyphicon-minus gs"></span> to remove form field :)</small></div>
-  </div>
-                            <form id="demo-form212" data-parsley-validate class="form-horizontal form-label-left" method="post">{% csrf_token %}
-                                <div class="form-group">
-                                    <div class="col-md-6 col-sm-9 col-xs-6 col-md-offset-3">
-                                        {% load bootstrap %}
-
-                                        {{ form|bootstrap_horizontal:'col-lg-2' }}
-
-                                    </div>
-                                </div>
-
-                                <div class="row">
-
-                                    <!-- /page content -->
-
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-3 col-sm-3 col-xs-3 col-md-offset-4">
-                                        <button type="button" class="btn btn-primary">Cancel</button>
-                                        <button class="btn btn-primary" type="reset">Reset</button>
-                                        <button type="submit" class="btn btn-success">Submit</button>
-                                    </div>
-                                </div>
-
-                            </form>
                         </div>
-                    </div>
+                        <div id="fielda">
+                            <div id="fielda0">
+                                <!-- Text input-->
+                                <hr/>
+                                <div class="form-group">
+                                    <label for="csetitle">Question</label>
+                                    <textarea type="text" class="form-control" id="question" name="question" placeholder="Type Question Here" cols="40" rows="5" style="resize:vertical;" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nt">Upload Image</label>
+                                    <input type="file" name="file" class="filestyle" data-iconName="glyphicon glyphicon-inbox">
+                                </div>
+                                <div class="form-group">
+                                    <label for="options">Options</label>
+                                    <div data-role="dynamic-fields">
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <input type="radio" name="reason" value="Answer"> Answer
+                                                    <span>-</span>
+                                                    <label class="sr-only" for="field-name">Option</label>
+                                                    <input type="text" class="form-control" id="field-name" placeholder="Field Name">
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-danger" data-role="remove">
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                            </button>
+                                            <button class="btn btn-primary" data-role="add">
+                                                <span class="glyphicon glyphicon-plus"></span>
+                                            </button>
+                                        </div>  <!-- /div.form-inline -->
+                                    </div>  <!-- /div[data-role="dynamic-fields"] -->
+                                </div>
+                                <div class="form-group">
+                                    <label for="csetitle">Slug</label>
+                                    <textarea type="text" class="form-control" id="question" name="question" placeholder="Explain You Answer" cols="40" rows="5" style="resize:vertical;" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="csetitle">Point</label>
+                                    <input type="number" class="form-control" id="question" name="question" placeholder="Allocate Score Here" required>
+                                    <hr/>
+                                </div>
+                            </div>
+                            <!--end field0-->
+                        </div>
+                        <!--end field-->
+
+                        <div class="form-group">
+                            <button id="add-more" name="add-more" class="btn btn-primary">Add More</button>
+                        </div>
+                    </form>
                 </div>
             </div>
 
+        </form>
 
-            {% endblock %}
+    </div>
+    <div id="step-2">
+        <h2 class="StepTitle">Step 2 Content</h2>
+        <p>
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <div id="step-3">
+        <h2 class="StepTitle">Step 3 Content</h2>
+        <p>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <div id="step-4">
+        <h2 class="StepTitle">Step 4 Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
 
+</div>
+<!-- End SmartWizard Content -->
+
+
+{% endblock %}

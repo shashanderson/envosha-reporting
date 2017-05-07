@@ -2,134 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa76c9d-8753-4395-bcd0-ba3457ca18be" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/css/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/dist/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/grunt/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/grunt/bs-commonjs-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/grunt/bs-raw-files-generator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/grunt/configBridge.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/grunt/sauce_browsers.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/.jscsrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/js/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/.csscomb.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/.csslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/badges.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/close.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/glyphicons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/input-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/jumbotron.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/background-variant.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/border-radius.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/center-block.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/clearfix.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/gradients.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/grid-framework.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/hide-text.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/image.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/labels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/nav-divider.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/nav-vertical-align.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/opacity.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/progress-bar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/reset-filter.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/reset-text.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/resize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/responsive-visibility.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/size.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/tab-focus.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/table-row.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/text-emphasis.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/text-overflow.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/mixins/vendor-prefixes.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/modals.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/navs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/pager.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/panels.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/print.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/responsive-embed.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/tables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/theme.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/type.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/less/wells.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/nuget/MyGet.ps1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/nuget/bootstrap.less.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/nuget/bootstrap.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ENVOSHA/static/bootstrap/package.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ENVOSHA/static/books/js/personal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_personal_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ENVOSHA/templatetags/company_name_tag.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ENVOSHA/static/CEM_Report_new.docx" afterPath="$PROJECT_DIR$/ENVOSHA/static/CEM_Report_new.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ENVOSHA/settings.py" afterPath="$PROJECT_DIR$/ENVOSHA/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ENVOSHA/templates/baseform.html" afterPath="$PROJECT_DIR$/ENVOSHA/templates/baseform.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ENVOSHA/templates/company/cem_form.html" afterPath="$PROJECT_DIR$/ENVOSHA/templates/company/cem_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ENVOSHA/templates/company/cem_reports.html" afterPath="$PROJECT_DIR$/ENVOSHA/templates/company/cem_reports.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ENVOSHA/templates/company/company_list.html" afterPath="$PROJECT_DIR$/ENVOSHA/templates/company/company_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reporting/forms.py" afterPath="$PROJECT_DIR$/reporting/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reporting/models.py" afterPath="$PROJECT_DIR$/reporting/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reporting/urls.py" afterPath="$PROJECT_DIR$/reporting/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reporting/views.py" afterPath="$PROJECT_DIR$/reporting/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi.py" afterPath="$PROJECT_DIR$/wsgi.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -141,21 +29,68 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reporting/urls.py">
+      <file leaf-file-name="form_wizards.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/form_wizards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="187">
+              <caret line="447" column="19" lean-forward="true" selection-start-line="446" selection-start-column="0" selection-end-line="568" selection-end-column="52" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="book_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/book_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cem_reports.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/cem_reports.html">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ENVOSHA/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="70" />
+            <state relative-caret-position="340">
+              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company_name_tag.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ENVOSHA/templatetags/company_name_tag.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partial_book_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#td#8;n#tr#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reporting/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -164,87 +99,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reporting/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="145" column="27" lean-forward="false" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
+            <state relative-caret-position="313">
+              <caret line="269" column="0" lean-forward="true" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reporting/demo2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#15#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ENVOSHA/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baseform.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/baseform.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-41">
-              <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -261,26 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AreaPersonalType</find>
-      <find>new</find>
-      <find>company</find>
-      <find>company_</find>
-      <find>cem_update</find>
-      <find>companys</find>
-      <find>cem_create</find>
-      <find>templates</find>
-      <find>_edit</find>
-      <find>cem</find>
-      <find>company_update</find>
-      <find>object_list</find>
-      <find>company_list</find>
-      <find>users</find>
-      <find>New Sign</find>
-      <find>Button Example</find>
-      <find>Search:</find>
-      <find>deb</find>
-      <find>debug</find>
-      <find>tags</find>
       <find>tag</find>
       <find>SECRET_KEY</find>
       <find>data</find>
@@ -291,6 +130,26 @@
       <find>build/</find>
       <find>js-old</find>
       <find>src</find>
+      <find>bootstrap/</find>
+      <find>ingredient_form</find>
+      <find>Per</find>
+      <find>Options</find>
+      <find>add-more</find>
+      <find>form</find>
+      <find>Area</find>
+      <find>TABS</find>
+      <find>hOME</find>
+      <find>Tabs</find>
+      <find>Form</find>
+      <find>Vertical Style</find>
+      <find>Form Wizards</find>
+      <find>STEP</find>
+      <find>company_new</find>
+      <find>musimb</find>
+      <find>edit</find>
+      <find>books</find>
+      <find>This is a basic</find>
+      <find>wqwq</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;{% static '</replace>
@@ -301,19 +160,21 @@
       <replace>company</replace>
       <replace>AreaPersonalType</replace>
       <replace>js</replace>
+      <replace>css/bootstrap/</replace>
+      <replace>cem_form</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ENVOSHA/view.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/urls.py" />
-        <option value="$PROJECT_DIR$/reporting/URLS.py" />
-        <option value="$PROJECT_DIR$/ENVOSHA/templates/home.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/form_validation.html" />
         <option value="$USER_HOME$/PycharmProjects/envosha-old/cem_reports/templates/cem_reports/base.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/invoice/form.html" />
@@ -328,31 +189,43 @@
         <option value="$PROJECT_DIR$/ENVOSHA/templates/company_form.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/company_list.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/company_confirm_delete.html" />
-        <option value="$PROJECT_DIR$/reporting/forms.py" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/company/company_confirm_delete.html" />
         <option value="$PROJECT_DIR$/reporting/apps.py" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/index.html" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/cem/cem_from.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/cem/cem_list.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/company/cem_from.html" />
-        <option value="$PROJECT_DIR$/reporting/models.py" />
         <option value="$PROJECT_DIR$/reporting/demo2.py" />
         <option value="$PROJECT_DIR$/ENVOSHA/views.py" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/404.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/500.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/403.html" />
-        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/company_list.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/company/cem_list.html" />
-        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/company_form.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/urls.py" />
-        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/cem_form.html" />
-        <option value="$PROJECT_DIR$/ENVOSHA/settings.py" />
-        <option value="$PROJECT_DIR$/reporting/urls.py" />
-        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/cem_reports.html" />
-        <option value="$PROJECT_DIR$/reporting/views.py" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/base.html" />
+        <option value="$PROJECT_DIR$/wsgi.py" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/new_cem.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/cem_reports.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/company_form.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/cem_form.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_delete.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_update.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/reporting/forms.py" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/books/includes/personal_list.html" />
         <option value="$PROJECT_DIR$/ENVOSHA/templates/baseform.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/static/books/js/personal.js" />
+        <option value="$PROJECT_DIR$/reporting/models.py" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/company/company_list.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_create.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_list.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_personal_list.html" />
+        <option value="$PROJECT_DIR$/reporting/views.py" />
+        <option value="$PROJECT_DIR$/reporting/urls.py" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templatetags/company_name_tag.html" />
+        <option value="$PROJECT_DIR$/ENVOSHA/settings.py" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templatetags/company_name_tag.py" />
+        <option value="$PROJECT_DIR$/ENVOSHA/templates/books/book_list.html" />
       </list>
     </option>
   </component>
@@ -434,14 +307,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templatetags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ENVOSHA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,13 +390,17 @@
     <property name="SearchEverywhereHistoryKey" value="plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\templates\books\includes" />
+      <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\templates\books" />
+      <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\templates\company" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\static\books\js" />
+      <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\templates\books\includes" />
       <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\templates\company" />
       <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\templates\cem" />
       <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\shashank.singh\ENVOSHA\ENVOSHA\templates\company" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -623,21 +566,28 @@
       <option name="project" value="LOCAL" />
       <updated>1493740391820</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixing bootstrap STATIC">
+      <created>1493773792065</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1493773792065</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="-8" width="1522" height="916" extended-state="7" />
+    <frame x="86" y="-8" width="1522" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28522572" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29753762" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33469945" sideWeight="0.5027397" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36653894" sideWeight="0.50547194" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36653894" sideWeight="0.49726027" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36653894" sideWeight="0.49452806" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -649,6 +599,29 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36653894" sideWeight="0.50547194" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36653894" sideWeight="0.49452806" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29753762" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -672,109 +645,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/form_validation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/envosha-old/cem_reports/templates/cem_reports/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="197" column="21" lean-forward="false" selection-start-line="197" selection-start-column="21" selection-end-line="197" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/glyphicons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12750">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/invoice/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/static/images/paypal.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/pdf_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/xx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="15" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/post_form_upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/level2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578">
@@ -800,13 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -877,20 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/cem_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/company_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ENVOSHA/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -898,24 +747,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings_custom.py.edit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reporting/demo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/new_cem.html" />
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/cem_reports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/general_elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="296" column="8" lean-forward="true" selection-start-line="296" selection-start-column="8" selection-end-line="350" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/company_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="65" selection-end-column="28" />
+        <state relative-caret-position="748">
+          <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/cem_form.html">
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_delete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3315">
-          <caret line="209" column="2" lean-forward="false" selection-start-line="209" selection-start-column="2" selection-end-line="209" selection-end-column="2" />
+        <state relative-caret-position="153">
+          <caret line="9" column="82" lean-forward="false" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/models.py">
+    <entry file="file://$PROJECT_DIR$/settings_custom.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        <state relative-caret-position="357">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -927,97 +815,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings_custom.py.edit">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings_custom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/demo2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/cem_reports.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reporting/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="145" column="27" lean-forward="false" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ENVOSHA/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="204">
+          <caret line="56" column="37" lean-forward="true" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/static/books/js/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reporting/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="97" lean-forward="true" selection-start-line="19" selection-start-column="97" selection-end-line="19" selection-end-column="97" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/baseform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41">
-          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="71" column="66" lean-forward="false" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/cem_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1954">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/cem_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="73" column="42" lean-forward="true" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/static/books/js/personal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/widgets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="543" column="0" lean-forward="true" selection-start-line="543" selection-start-column="0" selection-end-line="589" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reporting/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reporting/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="269" column="0" lean-forward="true" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_book_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#td#8;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templatetags/company_name_tag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templatetags/company_name_tag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/company/company_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reporting/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/includes/partial_personal_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/form_wizards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="447" column="19" lean-forward="true" selection-start-line="446" selection-start-column="0" selection-end-line="568" selection-end-column="52" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENVOSHA/templates/books/book_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

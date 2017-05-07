@@ -1,9 +1,9 @@
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm
-
-
 # If you don't do this you cannot use Bootstrap CSS
-from reporting.models import Customer, Company
+from django.forms import ModelForm, inlineformset_factory
+
+from reporting.models import Company, AreaPersonalType
 
 
 class LoginForm(AuthenticationForm):
@@ -13,6 +13,8 @@ class LoginForm(AuthenticationForm):
                                widget=forms.TextInput(attrs={'class': 'form-control', 'name': 'password'}))
 
 
-
-
-
+class BookForm(forms.ModelForm):
+    class Meta:
+        model = AreaPersonalType
+        fields = ('company', 'point', 'work_unit', 'method', 'flow_rate', 'media',
+                  'technique','area_personal_type','classification_type','classification_value' )
