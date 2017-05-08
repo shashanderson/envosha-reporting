@@ -79,7 +79,7 @@
                           <td>{{ company.consultant }}</td>
                           <td>{{ company.created_at }}</td>
                           <td><a href="{% url "company_edit" company.id %}">View</td>
-                          <td><a href="{% url "company_edit" company.id %}">View</td>
+                          <td><a href="{% url "book_list" company.id %}">View</td>
                           <td><a href="{% url "company_delete" company.id %}">Delete</a></td>
                         </tr>
 

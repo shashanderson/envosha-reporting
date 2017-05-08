@@ -166,7 +166,8 @@ def initiate_replace(self, regex, replace):
     docx_replace_regex(doc, regex, replace)
     doc.save('ENVOSHA/static/CEM_Report_new.docx')
 
-def cover_report(self,id):
+
+def cover_report(self, id):
     filename = "ENVOSHA/templates/CEM_Cover.docx"
     doc = Document(filename)
     comp = Company.objects.filter(id=id)
@@ -174,7 +175,7 @@ def cover_report(self,id):
         docx_replace_regex(doc, r"<company_name>", coms.company_name)
         docx_replace_regex(doc, r"<company_address>", coms.company_address)
     doc.save('ENVOSHA/static/CEM_Cover_new.docx')
-    return render( self, 'company/cem_reports.html')
+    return render(self, 'company/cem_reports.html')
 
 
 # regex1 = re.compile(r"Baseline")
@@ -284,6 +285,4 @@ def book_delete(request, pk):
 
 def comp_list(request, pk):
     comp = Company.objects.filter(id=pk)
-    print comp
-
     return render(request, 'books/book_list.html', {'comp': comp})
