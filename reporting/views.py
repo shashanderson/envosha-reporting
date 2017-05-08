@@ -143,7 +143,7 @@ def cem_delete(request, pk, template_name='company/cem_confirm_delete.html'):
 
 
 def docx_replace_regex(doc_obj, regex, replace):
-    regex = re.compile(r"Summary")
+    regex = re.compile(regex)
 
     for p in doc_obj.paragraphs:
         if regex.search(p.text):
@@ -165,6 +165,16 @@ def initiate_replace(self, regex, replace):
     doc = Document(filename)
     docx_replace_regex(doc, regex, replace)
     doc.save('ENVOSHA/static/CEM_Report_new.docx')
+
+def cover_report(self,id):
+    filename = "ENVOSHA/templates/CEM_Cover.docx"
+    doc = Document(filename)
+    comp = Company.objects.filter(id=id)
+    for coms in comp:
+        docx_replace_regex(doc, r"<company_name>", coms.company_name)
+        docx_replace_regex(doc, r"<company_address>", coms.company_address)
+    doc.save('ENVOSHA/static/CEM_Cover_new.docx')
+    return render( self, 'company/cem_reports.html')
 
 
 # regex1 = re.compile(r"Baseline")
@@ -206,10 +216,20 @@ def cem_reports(request, template_name='company/cem_reports.html'):
     return render(request, template_name, data)
 
 
-def book_list(request,pk):
-    books = AreaPersonalType.objects.filter(company=pk,area_personal_type='area')
+def book_list(request, pk):
+    books = AreaPersonalType.objects.filter(company=pk, area_personal_type='area')
+    area_mel = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='mel')
+    area_cl = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='cl')
+    area_twa = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='twa')
     personal = AreaPersonalType.objects.filter(company=pk, area_personal_type='personal')
-    return render(request, 'books/book_list.html', {'books': books,'personals': personal})
+    personal_mel = AreaPersonalType.objects.filter(company=pk, area_personal_type='personal', classification_type='mel')
+    personal_cl = AreaPersonalType.objects.filter(company=pk, area_personal_type='personal', classification_type='cl')
+    personal_twa = AreaPersonalType.objects.filter(company=pk, area_personal_type='personal', classification_type='twa')
+    return render(request, 'books/book_list.html', {'books': books, 'personals': personal, 'area_mel': area_mel,
+                                                    'area_cl': area_cl, 'area_twa': area_twa,
+                                                    'personal_mel': personal_mel, 'personal_cl': personal_cl,
+                                                    'personal_twa': personal_twa
+                                                    })
 
 
 def save_book_form(request, form, template_name):
@@ -262,7 +282,7 @@ def book_delete(request, pk):
     return JsonResponse(data)
 
 
-def comp_list(request,pk):
+def comp_list(request, pk):
     comp = Company.objects.filter(id=pk)
     print comp
 

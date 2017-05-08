@@ -1,0 +1,28 @@
+{% for area_mel in area_mel %}
+  <tr>
+    <td>{{ area_mel.id }}</td>
+    <td>{{ area_mel.company }}</td>
+    <td>{{ area_mel.point }}</td>
+    <td>{{ area_mel.work_unit }}</td>
+    <td>{{ area_mel.method }}</td>
+    <td>{{ area_mel.flow_rate }}</td>
+    <td>{{ area_mel.media }}</td>
+    <td>{{ area_mel.technique }}</td>
+    <td style="width: 150px">
+      <button type="button"
+              class="btn btn-warning btn-sm js-update-book"
+              data-url="{% url 'book_update' area_mel.id %}">
+        <span class="glyphicon glyphicon-pencil"></span>
+      </button>
+      <button type="button"
+              class="btn btn-danger btn-sm js-delete-book"
+              data-url="{% url 'book_delete' area_mel.id %}">
+        <span class="glyphicon glyphicon-trash"></span>
+      </button>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No book</td>
+  </tr>
+{% endfor %}

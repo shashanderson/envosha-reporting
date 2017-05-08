@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^books/(?P<pk>\d+)/update/$', views.book_update, name='book_update'),
     url(r'^books/(?P<pk>\d+)/delete/$', views.book_delete, name='book_delete'),
     url(r'^initiate_replace/(?P<regex>\d+)/(?P<replace>(\d+))/$', views.initiate_replace, name='initiate_replace'),
+    url(r'^cover/(?P<id>\d+)$', views.cover_report, name='cover_report'),
 
 
 
