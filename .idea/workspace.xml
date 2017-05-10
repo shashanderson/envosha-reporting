@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6aa76c9d-8753-4395-bcd0-ba3457ca18be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ENVOSHA/templates/baseform.html" afterPath="$PROJECT_DIR$/ENVOSHA/templates/baseform.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -524,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494424762214</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add report template - Area , Personnel">
+      <created>1494424867052</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1494424867052</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
