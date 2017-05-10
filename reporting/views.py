@@ -305,7 +305,7 @@ def worksheet_report(request, template_name='company/cem_Worksheet_reports.html'
 def book_list(request, pk):
     books = AreaPersonalType.objects.filter(company=pk, area_personal_type='area')
     area_mel = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='mel')
-    area_mel_parameter = Parameter.objects.all()
+    area_mel_parameter = Parameter.objects.filter(area_personal_type=19)
     area_cl = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='cl')
     area_twa = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='twa')
     personal = AreaPersonalType.objects.filter(company=pk, area_personal_type='personal')
