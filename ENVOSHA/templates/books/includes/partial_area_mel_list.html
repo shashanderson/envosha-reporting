@@ -9,40 +9,10 @@
     <td>{{ area_mel.media }}</td>
     <td>{{ area_mel.technique }}</td>
     <td>
+        {% for area_mel_parameter in area_mel_parameter %}
+            {{ area_mel_parameter.id }}
+        {% endfor %}
 
-             <div class="container">
-            <div class="row">
-                <div id="filter-panel" class="collapse filter-panel">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <form class="form-inline" role="form">
-                                <div class="form-group">
-                                    <table class="table" id="book-table">
-                                        <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Parameter</th>
-                                            <th></th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        {% for parameter in parameter %}
-                                        <tr>
-                                            <td>{{ parameter.id }}</td>
-                                            <td>{{ parameter.parameter_value }}</td>
-                                            {% endfor %}
-
-                                        </tbody>
-                                    </table>
-                                </div> <!-- form group [rows] -->
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </td>
     <td style="width: 150px">
 
@@ -61,9 +31,7 @@
             <span class="glyphicon glyphicon-plus"></span>
 
         </button>
-        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filter-panel">
-            <span class="glyphicon glyphicon-cog"></span>
-        </button>
+
 
     </td>
 </tr>

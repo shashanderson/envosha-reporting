@@ -69,6 +69,9 @@ class AreaPersonalType(models.Model):
     def __unicode__(self):
         return unicode(self.company)
 
+    class Meta:
+        unique_together = ('company', 'area_personal_type', 'point')
+
     def get_absolute_url(self):
         return reverse('cem_edit', kwargs={'pk': self.pk})
 
