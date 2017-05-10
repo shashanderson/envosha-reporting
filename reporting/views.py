@@ -13,8 +13,8 @@ from django.template import RequestContext
 from django.template.loader import render_to_string
 from docx import Document
 
-from reporting.forms import BookForm
-from reporting.models import Company, AreaPersonalType
+from reporting.forms import BookForm, ParameterForm
+from reporting.models import Company, AreaPersonalType, Parameter
 
 
 @login_required(login_url="login/")
@@ -178,6 +178,62 @@ def cover_report(self, id):
     return render(self, 'company/cem_reports.html')
 
 
+def cem_cover_report(self, id):
+    filename = "ENVOSHA/templates/CEM_Cover.docx"
+    doc = Document(filename)
+    comp = Company.objects.filter(id=id)
+    for coms in comp:
+        docx_replace_regex(doc, r"<company_name>", coms.company_name)
+        docx_replace_regex(doc, r"<company_address>", coms.company_address)
+    doc.save('ENVOSHA/static/CEM_Cover_new.docx')
+    return render(self, 'company/cem_reports.html')
+
+
+
+def coc_cover_report(self, id):
+    filename = "ENVOSHA/templates/CEM_Coc.docx"
+    doc = Document(filename)
+    comp = Company.objects.filter(id=id)
+    for coms in comp:
+        docx_replace_regex(doc, r"<company_name>", coms.company_name)
+        docx_replace_regex(doc, r"<company_address>", coms.company_address)
+    doc.save('ENVOSHA/static/CEM_Coc_new.docx')
+    return render(self, 'company/cem_reports.html')
+
+
+def main_cover_report(self, id):
+    filename = "ENVOSHA/templates/CEM_Main.docx"
+    doc = Document(filename)
+    comp = Company.objects.filter(id=id)
+    for coms in comp:
+        docx_replace_regex(doc, r"<company_name>", coms.company_name)
+        docx_replace_regex(doc, r"<company_address>", coms.company_address)
+    doc.save('ENVOSHA/static/CEM_Main_new.docx')
+    return render(self, 'company/cem_reports.html')
+
+
+
+def worksheet_cover_report(self, id):
+    filename = "ENVOSHA/templates/CEM_Cover.docx"
+    doc = Document(filename)
+    comp = Company.objects.filter(id=id)
+    for coms in comp:
+        docx_replace_regex(doc, r"<company_name>", coms.company_name)
+        docx_replace_regex(doc, r"<company_address>", coms.company_address)
+    doc.save('ENVOSHA/static/CEM_Cover_new.docx')
+    return render(self, 'company/cem_reports.html')
+
+
+def lab_cover_report(self, id):
+    filename = "ENVOSHA/templates/CEM_Lab.docx"
+    doc = Document(filename)
+    comp = Company.objects.filter(id=id)
+    for coms in comp:
+        docx_replace_regex(doc, r"<company_name>", coms.company_name)
+        docx_replace_regex(doc, r"<company_address>", coms.company_address)
+    doc.save('ENVOSHA/static/CEM_Lab_new.docx')
+    return render(self, 'company/cem_reports.html')
+
 # regex1 = re.compile(r"Baseline")
 # replace1 = r"{{ company_name }}"
 # regex2 = re.compile(r"{{ naaaaaam }}")
@@ -210,7 +266,36 @@ def custom_404(request):
     return render(request, '404.html', {}, status=404)
 
 
-def cem_reports(request, template_name='company/cem_reports.html'):
+
+
+def cem_report(request, template_name='company/cem_reports.html'):
+    companys = Company.objects.all()
+    data = {}
+    data['object_list'] = companys
+    return render(request, template_name, data)
+
+def coc_report(request, template_name='company/cem_coc_reports.html'):
+    companys = Company.objects.all()
+    data = {}
+    data['object_list'] = companys
+    return render(request, template_name, data)
+
+
+def lab_report(request, template_name='company/cem_LAR_reports.html'):
+    companys = Company.objects.all()
+    data = {}
+    data['object_list'] = companys
+    return render(request, template_name, data)
+
+
+def main_report(request, template_name='company/cem_Main_reports.html'):
+    companys = Company.objects.all()
+    data = {}
+    data['object_list'] = companys
+    return render(request, template_name, data)
+
+
+def worksheet_report(request, template_name='company/cem_Worksheet_reports.html'):
     companys = Company.objects.all()
     data = {}
     data['object_list'] = companys
@@ -252,9 +337,10 @@ def save_book_form(request, form, template_name):
 
 def book_create(request):
     if request.method == 'POST':
-        form = BookForm(request.POST)
+        form = BookForm(request.POST, initial={"area_personal_type": "area", "classification_type": "mel", "company": 37})
+
     else:
-        form = BookForm()
+        form = BookForm(initial={"area_personal_type": "area", "classification_type": "mel", "company": 37})
     return save_book_form(request, form, 'books/includes/partial_book_create.html')
 
 
@@ -286,3 +372,65 @@ def book_delete(request, pk):
 def comp_list(request, pk):
     comp = Company.objects.filter(id=pk)
     return render(request, 'books/book_list.html', {'comp': comp})
+
+
+def parameter_list(request, pk):
+    parameter = Parameter.objects.all()
+    return render(request, 'books/book_list.html', {'parameter': parameter,
+                                                    })
+
+
+def parm_list(request, pk):
+    parameter = Company.objects.filter(id=pk)
+    return render(request, 'books/book_list.html', {'parameter': parameter})
+
+
+def save_parameter_form(request, form, template_name):
+    data = dict()
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            data['form_is_valid'] = True
+            parameter = Parameter.objects.all()
+            data['html_parameter_list'] = render_to_string('books/includes/partial_parameter_list.html', {
+                'parameter': parameter
+            })
+        else:
+            data['form_is_valid'] = False
+    context = {'form': form}
+    data['html_form'] = render_to_string(template_name, context, request=request)
+    return JsonResponse(data)
+
+
+def parameter_create(request):
+    if request.method == 'POST':
+        form = ParameterForm(request.POST, initial={"area_personal_type": 19})
+
+    else:
+        form = ParameterForm(initial={"area_personal_type": 19})
+    return save_parameter_form(request, form, 'books/includes/partial_parameter_create.html')
+
+
+def parameter_update(request, pk):
+    parameter = get_object_or_404(Parameter, pk=pk)
+    if request.method == 'POST':
+        form = ParameterForm(request.POST, instance=parameter)
+    else:
+        form = ParameterForm(instance=parameter)
+    return save_parameter_form(request, form, 'books/includes/partial_parameter_update.html')
+
+
+def parameter_delete(request, pk):
+    parameter = get_object_or_404(Parameter, pk=pk)
+    data = dict()
+    if request.method == 'POST':
+        parameter.delete()
+        data['form_is_valid'] = True
+        parameter = AreaPersonalType.objects.all()
+        data['html_parameter_list'] = render_to_string('books/includes/partial_parameter_list.html', {
+            'parameter': parameter
+        })
+    else:
+        context = {'parameter': parameter}
+        data['html_form'] = render_to_string('books/includes/partial_parameter_delete.html', context, request=request)
+    return JsonResponse(data)

@@ -1,5 +1,5 @@
 {% for area_mel in area_mel %}
-  <tr>
+<tr>
     <td>{{ area_mel.id }}</td>
     <td>{{ area_mel.company }}</td>
     <td>{{ area_mel.point }}</td>
@@ -8,21 +8,67 @@
     <td>{{ area_mel.flow_rate }}</td>
     <td>{{ area_mel.media }}</td>
     <td>{{ area_mel.technique }}</td>
-    <td style="width: 150px">
-      <button type="button"
-              class="btn btn-warning btn-sm js-update-book"
-              data-url="{% url 'book_update' area_mel.id %}">
-        <span class="glyphicon glyphicon-pencil"></span>
-      </button>
-      <button type="button"
-              class="btn btn-danger btn-sm js-delete-book"
-              data-url="{% url 'book_delete' area_mel.id %}">
-        <span class="glyphicon glyphicon-trash"></span>
-      </button>
+    <td>
+
+             <div class="container">
+            <div class="row">
+                <div id="filter-panel" class="collapse filter-panel">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <form class="form-inline" role="form">
+                                <div class="form-group">
+                                    <table class="table" id="book-table">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Parameter</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for parameter in parameter %}
+                                        <tr>
+                                            <td>{{ parameter.id }}</td>
+                                            <td>{{ parameter.parameter_value }}</td>
+                                            {% endfor %}
+
+                                        </tbody>
+                                    </table>
+                                </div> <!-- form group [rows] -->
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </td>
-  </tr>
+    <td style="width: 150px">
+
+
+        <button type="button"
+                class="btn btn-warning btn-sm js-update-book"
+                data-url="{% url 'book_update' area_mel.id %}">
+            <span class="glyphicon glyphicon-pencil"></span>
+        </button>
+        <button type="button"
+                class="btn btn-danger btn-sm js-delete-book"
+                data-url="{% url 'book_delete' area_mel.id %}">
+            <span class="glyphicon glyphicon-trash"></span>
+        </button>
+        <button type="button" class="btn btn-primary js-create-parameter" data-url="{% url 'parameter_create' %}">
+            <span class="glyphicon glyphicon-plus"></span>
+
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filter-panel">
+            <span class="glyphicon glyphicon-cog"></span>
+        </button>
+
+    </td>
+</tr>
 {% empty %}
-  <tr>
-    <td colspan="8" class="text-center bg-warning">No book</td>
-  </tr>
+<tr>
+    <td colspan="8" class="text-center bg-warning">No MEL</td>
+</tr>
 {% endfor %}

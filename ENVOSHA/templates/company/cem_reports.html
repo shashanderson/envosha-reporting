@@ -10,7 +10,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>CEM Reports <small>Active</small></h2>
+                    <h2>CEM Cover Reports <small>Active</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -47,7 +47,7 @@
                           <td>{{ company.company_name }}</td>
                           <td>{{ company.created_at }}</td>
                           <td><a href="{% url 'cover_report' id=company.id  %}" >Generate Link</a></td>
-                          <td><a href="../static/CEM_Report_new.docx" >Download Link</a></td>
+                          <td><a href="../static/CEM_Cover_new.docx" >Download Link</a></td>
                         </tr>
 
                       </tbody>{% endfor %}

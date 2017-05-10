@@ -65,22 +65,33 @@ class AreaPersonalType(models.Model):
     is_active = models.CharField(max_length=200, null=True, blank=True)
 
 
+
     def __unicode__(self):
-        return self.company
+        return unicode(self.company)
 
     def get_absolute_url(self):
         return reverse('cem_edit', kwargs={'pk': self.pk})
+
     def get_absolute_url(self):
         return reverse('book_list', kwargs={'pk': self.pk})
 
 
 class Parameter(models.Model):
-    company = models.CharField(max_length=200)
-    area_personal_type = models.CharField(max_length=200)
-    point = models.CharField(max_length=200)
+    area_personal_type = models.ForeignKey(AreaPersonalType)
     parameter_value = models.CharField(max_length=200)
     created_at = models.DateTimeField(null=True, auto_now_add=True)
     created_by = models.CharField(max_length=200, null=True, blank=True)
     updated_at = models.DateTimeField(null=True, blank=True)
     updated_by = models.CharField(max_length=200, null=True, blank=True)
     is_active = models.CharField(max_length=200, null=True, blank=True)
+
+    def __unicode__(self):
+        return unicode(self.area_personal_type)
+
+    def get_absolute_url(self):
+        return reverse('parameter_list', kwargs={'pk': self.pk})
+
+
+
+
+

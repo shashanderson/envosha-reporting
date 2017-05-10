@@ -1,0 +1,31 @@
+{% for book in books %}
+  <tr>
+    <td>{{ book.id }}</td>
+    <td>{{ book.company }}</td>
+    <td>{{ book.point }}</td>
+    <td>{{ book.work_unit }}</td>
+    <td>{{ book.method }}</td>
+    <td>{{ book.flow_rate }}</td>
+    <td>{{ book.media }}</td>
+    <td>{{ book.technique }}</td>
+    <td style="width: 150px">
+      <button type="button"
+              class="btn btn-warning btn-sm js-update-book"
+              data-url="{% url 'book_update' book.id %}">
+        <span class="glyphicon glyphicon-pencil"></span>
+      </button>
+
+
+      <button type="button"
+              class="btn btn-danger btn-sm js-delete-book"
+              data-url="{% url 'book_delete' book.id %}">
+        <span class="glyphicon glyphicon-trash"></span>
+      </button>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No book</td>
+  </tr>
+{% endfor %}
+

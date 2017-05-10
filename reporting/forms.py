@@ -1,9 +1,10 @@
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm
-# If you don't do this you cannot use Bootstrap CSS
-from django.forms import ModelForm, inlineformset_factory
 
-from reporting.models import Company, AreaPersonalType
+from reporting.models import AreaPersonalType, Parameter
+
+
+# If you don't do this you cannot use Bootstrap CSS
 
 
 class LoginForm(AuthenticationForm):
@@ -17,4 +18,10 @@ class BookForm(forms.ModelForm):
     class Meta:
         model = AreaPersonalType
         fields = ('company', 'point', 'work_unit', 'method', 'flow_rate', 'media',
-                  'technique','area_personal_type','classification_type','classification_value' )
+                  'technique', 'area_personal_type', 'classification_type', 'classification_value')
+
+
+class ParameterForm(forms.ModelForm):
+    class Meta:
+        model = Parameter
+        fields = (  'area_personal_type', 'parameter_value')

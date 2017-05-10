@@ -4,6 +4,7 @@
 
 {% block javascript %}
 <script src="{% static 'books/js/books.js' %}"></script>
+<script src="{% static 'books/js/parameter.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -132,12 +133,15 @@
                                             <th>media</th>
                                             <th>technique</th>
                                             <th></th>
+                                            <th></th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         {% include 'books/includes/partial_area_mel_list.html' %}
                                         </tbody>
                                     </table>
+
+
 
                                     <span class="section">Area  CL</span>
 
@@ -390,6 +394,14 @@
 
 
             <div class="modal fade" id="modal-book">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                    </div>
+                </div>
+            </div>
+
+ <div class="modal fade" id="modal-parameter">
                 <div class="modal-dialog">
                     <div class="modal-content">
 

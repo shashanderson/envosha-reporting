@@ -77,10 +77,11 @@
                   </li>
                   <li><a><i class="fa fa-bar-chart-o"></i> Reports <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="cemreports">CEM Worksheet</a></li>
-                      <li><a href="cemreports">CEM Chain Of Custody </a></li>
-                      <li><a href="cemreports">CEM Lab Analysis Result </a></li>
-                      <li><a href="cemreports">CEM Main Reports</a></li>
+                      <li><a href="worksheet_report">CEM Worksheet</a></li>
+                      <li><a href="coc_report">CEM Chain Of Custody </a></li>
+                      <li><a href="lab_report">CEM Lab Analysis Result </a></li>
+                      <li><a href="cemreports">CEM Cover</a></li>
+                      <li><a href="main_report">CEM Main Reports</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -194,6 +195,7 @@
 
 
   <script src="{% static 'books/js/books.js' %}"></script>
+                      <script src="{% static 'books/js/parameter.js' %}"></script>
     <!-- FastClick -->
     <script src="{% static 'fastclick/lib/fastclick.js' %}"></script>
     <!-- NProgress -->
@@ -233,79 +235,6 @@
 
     <!-- Dropzone.js -->
     <script src="{% static 'dropzone/dist/min/dropzone.min.js' %}"></script>
-   <script>
-
-         $(document).ready(function(){
-      var i=1;
-     $("#add_row").click(function(){
-      $('#addr'+i).html("<td>"+ (i+1) +"</td><td><input name='Point"+i+"' type='text' placeholder='Point' class='form-control input-md'  /> </td><td><input  name='Work Unit"+i+"' type='text' placeholder='Work Unit'  class='form-control input-md'></td><td><input  name='Method"+i+"' type='text' placeholder='Method'  class='form-control input-md'></td><td><input  name='Flow rate"+i+"' type='text' placeholder='Flow rate'  class='form-control input-md'></td></td><td><input  name='Media"+i+"' type='text' placeholder='Media'  class='form-control input-md'></td></td><td><input  name='Technique"+i+"' type='text' placeholder='Technique'  class='form-control input-md'></td><td><input id='tags_"+i+"' name='Parameter"+i+"' type='text' placeholder='Parameter'  class='form-control' value='test , test2'></td>");
-
-      $('#tab_logic').append('<tr id="addr'+(i+1)+'"></tr>');
-      i++;
-  });
-     $("#delete_row").click(function(){
-    	 if(i>1){
-		 $("#addr"+(i-1)).html('');
-		 i--;
-		 }
-	 });
-
-
-
-
-});
-
-
-    var room = 1;
-function education_fields() {
-
-    room++;
-    var objTo = document.getElementById('education_fields')
-    var divtest = document.createElement("div");
-	divtest.setAttribute("class", "form-group removeclass"+room);
-	var rdiv = 'removeclass'+room;
-    divtest.innerHTML = '<div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Point" name="Point[]" value="" placeholder="Point"></div></div><div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Work Unit" name="Work Unit[]" value="" placeholder="Work Unit"></div></div><div class="col-sm-3 nopadding"><div class="form-group"> <input type="text" class="form-control" id="Degree" name="Method[]" value="" placeholder="Method"></div></div> <div class="form-group"> <input type="text" class="form-control" id="Degree" name="Method[]" value="" placeholder="Method"></div></div><div class="form-group"> <input type="text" class="form-control" id="Degree" name="Method[]" value="" placeholder="Method"></div></div><button class="btn btn-danger" type="button" onclick="remove_education_fields('+ room +');"> <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> </button></div></div></div></div><div class="clear"></div>';
-
-    objTo.appendChild(divtest)
-}
-   function remove_education_fields(rid) {
-	   $('.removeclass'+rid).remove();
-   }
-
-
-
-
-    	$(document).ready(function(){
-    //@naresh action dynamic childs
-    var next_exp = 0;
-    $("#add-more").click(function(e){
-        e.preventDefault();
-        var addto = "#fielda" + next_exp;
-        var addRemove = "#fielda" + (next_exp);
-        next_exp = next_exp + 1;
-        var newInp = '<div id="fielda'+ next_exp +'" name="field1'+ next_exp +'"><hr/>  <div class="form-group"> <label for="options">Options</label> <div data-role="dynamic-fields"> <div class="form-inline"> <div class="form-group"> <div class="col-md-12"> <input type="radio" name="reason" value="Answer"> Answer <span>-</span> <label class="sr-only" for="field-name">Option</label> <input type="text" class="form-control" id="field-name" placeholder="Field Name"> </div> </div> <button class="btn btn-danger" data-role="remove"> <span class="glyphicon glyphicon-remove"></span> </button> <button class="btn btn-primary" data-role="add"> <span class="glyphicon glyphicon-plus"></span> </button> </div><!-- /div.form-inline --> </div> <!-- /div[data-role="dynamic-fields"] --> </div> <hr/></div></div>';
-        var newInput = $(newInp);
-
-        var removeBtn = '<div class="form-group"><button id="remove' + (next_exp - 1) + '" class="btn btn-danger remove-me" >Remove</button></div></div></div><div id="field">';
-        var removeButton = $(removeBtn);
-        $(addto).after(newInput);
-        $(addRemove).after(removeButton);
-        $("#fielda" + next_exp).attr('data-source',$(addto).attr('data-source'));
-        $("#count").val(next_exp);
-
-            $('.remove-me').click(function(e){
-                e.preventDefault();
-                var fieldNum = this.id.charAt(this.id.length-1);
-                var fieldID = "#fielda" + fieldNum;
-                $(this).remove();
-                $(fieldID).remove();
-            });
-    });
-
-
-
-		});
-</script>
 
                       <style>
 
@@ -328,6 +257,7 @@ function education_fields() {
 [data-role="dynamic-fields"] > .form-inline:last-child [data-role="remove"] {
     display: none;
 }
+
                       </style>
 
   </body>

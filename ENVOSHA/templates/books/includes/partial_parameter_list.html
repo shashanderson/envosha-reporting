@@ -1,0 +1,21 @@
+{% for parameter in parameter %}
+  <tr>
+    <td>{{ parameter.parameter_value }}</td>
+    <td style="width: 150px">
+      <button type="button"
+              class="btn btn-warning btn-sm js-update-paramter"
+              data-url="{% url 'parameter_update' book.id %}">
+        <span class="glyphicon glyphicon-pencil"></span>
+      </button>
+      <button type="button"
+              class="btn btn-danger btn-sm js-delete-book"
+              data-url="{% url 'parameter_delete' book.id %}">
+        <span class="glyphicon glyphicon-trash"></span>
+      </button>
+    </td>
+  </tr>
+{% empty %}
+  <tr>
+    <td colspan="8" class="text-center bg-warning">No Parameter</td>
+  </tr>
+{% endfor %}
