@@ -64,10 +64,8 @@ class AreaPersonalType(models.Model):
     updated_by = models.CharField(max_length=200, null=True, blank=True)
     is_active = models.CharField(max_length=200, null=True, blank=True)
 
-
-
     def __unicode__(self):
-        return unicode(self.company)
+        return unicode(self.point)
 
     class Meta:
         unique_together = ('company', 'area_personal_type', 'point')
@@ -80,7 +78,9 @@ class AreaPersonalType(models.Model):
 
 
 class Parameter(models.Model):
-    area_personal_type = models.ForeignKey(AreaPersonalType)
+    company=models.ForeignKey(Company)
+    point =  models.ForeignKey(AreaPersonalType)
+    area_personal_type = models.CharField(max_length=200)
     parameter_value = models.CharField(max_length=200)
     created_at = models.DateTimeField(null=True, auto_now_add=True)
     created_by = models.CharField(max_length=200, null=True, blank=True)
@@ -88,13 +88,9 @@ class Parameter(models.Model):
     updated_by = models.CharField(max_length=200, null=True, blank=True)
     is_active = models.CharField(max_length=200, null=True, blank=True)
 
+
     def __unicode__(self):
-        return unicode(self.area_personal_type)
+        return unicode(self.id)
 
     def get_absolute_url(self):
         return reverse('parameter_list', kwargs={'pk': self.pk})
-
-
-
-
-

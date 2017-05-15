@@ -24,4 +24,4 @@ class BookForm(forms.ModelForm):
 class ParameterForm(forms.ModelForm):
     class Meta:
         model = Parameter
-        fields = (  'area_personal_type', 'parameter_value')
+        fields = (  'company','point', 'area_personal_type', 'parameter_value')

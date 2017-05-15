@@ -4,12 +4,12 @@
     <td style="width: 150px">
       <button type="button"
               class="btn btn-warning btn-sm js-update-paramter"
-              data-url="{% url 'parameter_update' book.id %}">
+              data-url="{% url 'parameter_update' parameter.id %}">
         <span class="glyphicon glyphicon-pencil"></span>
       </button>
       <button type="button"
               class="btn btn-danger btn-sm js-delete-book"
-              data-url="{% url 'parameter_delete' book.id %}">
+              data-url="{% url 'parameter_delete' parameter.id %}">
         <span class="glyphicon glyphicon-trash"></span>
       </button>
     </td>

@@ -189,7 +189,6 @@ def cem_cover_report(self, id):
     return render(self, 'company/cem_reports.html')
 
 
-
 def coc_cover_report(self, id):
     filename = "ENVOSHA/templates/CEM_Coc.docx"
     doc = Document(filename)
@@ -212,7 +211,6 @@ def main_cover_report(self, id):
     return render(self, 'company/cem_reports.html')
 
 
-
 def worksheet_cover_report(self, id):
     filename = "ENVOSHA/templates/CEM_Cover.docx"
     doc = Document(filename)
@@ -233,6 +231,7 @@ def lab_cover_report(self, id):
         docx_replace_regex(doc, r"<company_address>", coms.company_address)
     doc.save('ENVOSHA/static/CEM_Lab_new.docx')
     return render(self, 'company/cem_reports.html')
+
 
 # regex1 = re.compile(r"Baseline")
 # replace1 = r"{{ company_name }}"
@@ -266,13 +265,12 @@ def custom_404(request):
     return render(request, '404.html', {}, status=404)
 
 
-
-
 def cem_report(request, template_name='company/cem_reports.html'):
     companys = Company.objects.all()
     data = {}
     data['object_list'] = companys
     return render(request, template_name, data)
+
 
 def coc_report(request, template_name='company/cem_coc_reports.html'):
     companys = Company.objects.all()
@@ -305,8 +303,8 @@ def worksheet_report(request, template_name='company/cem_Worksheet_reports.html'
 def book_list(request, pk):
     books = AreaPersonalType.objects.filter(company=pk, area_personal_type='area')
     area_mel = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='mel')
-    area_mel_parameter = Parameter.objects.filter(area_personal_type=19)
     area_cl = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='cl')
+    area_mel_parameter = Parameter.objects.filter(company=pk, area_personal_type='area' )
     area_twa = AreaPersonalType.objects.filter(company=pk, area_personal_type='area', classification_type='twa')
     personal = AreaPersonalType.objects.filter(company=pk, area_personal_type='personal')
     personal_mel = AreaPersonalType.objects.filter(company=pk, area_personal_type='personal', classification_type='mel')
@@ -315,8 +313,9 @@ def book_list(request, pk):
     return render(request, 'books/book_list.html', {'books': books, 'personals': personal, 'area_mel': area_mel,
                                                     'area_cl': area_cl, 'area_twa': area_twa,
                                                     'personal_mel': personal_mel, 'personal_cl': personal_cl,
-                                                    'personal_twa': personal_twa , 'area_mel_parameter' : area_mel_parameter
+                                                    'personal_twa': personal_twa , 'area_mel_parameter':area_mel_parameter
                                                     })
+
 
 
 def save_book_form(request, form, template_name):
@@ -328,6 +327,7 @@ def save_book_form(request, form, template_name):
             books = AreaPersonalType.objects.all()
             data['html_book_list'] = render_to_string('books/includes/partial_book_list.html', {
                 'books': books
+
             })
         else:
             data['form_is_valid'] = False
@@ -370,6 +370,7 @@ def book_delete(request, pk):
     return JsonResponse(data)
 
 
+
 def comp_list(request, pk):
     comp = Company.objects.filter(id=pk)
     return render(request, 'books/book_list.html', {'comp': comp})
@@ -405,10 +406,10 @@ def save_parameter_form(request, form, template_name):
 
 def parameter_create(request):
     if request.method == 'POST':
-        form = ParameterForm(request.POST, initial={"area_personal_type": 19})
+        form = ParameterForm(request.POST)
 
     else:
-        form = ParameterForm(initial={"area_personal_type": 19})
+        form = ParameterForm()
     return save_parameter_form(request, form, 'books/includes/partial_parameter_create.html')
 
 

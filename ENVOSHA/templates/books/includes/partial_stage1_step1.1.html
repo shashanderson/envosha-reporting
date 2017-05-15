@@ -1,0 +1,91 @@
+<div id="step-11">
+    <h2 class="StepTitle">Step 1.1 Add Area</h2>
+    <form class="form-horizontal form-label-left">
+
+        <span class="section">Area  MEL</span>
+
+        <p>
+            <button type="button" class="btn btn-primary js-create-book" data-url="{% url 'book_create' %}">
+                <span class="glyphicon glyphicon-plus"></span>
+                Add
+            </button>
+        </p>
+
+        <table class="table" id="book-table">
+            <thead>
+            <tr>
+                <th>Point</th>
+                <th>Work Unit</th>
+                <th>Method</th>
+                <th>Flow Rate</th>
+                <th>Media</th>
+                <th>Technique</th>
+                <th></th>
+                <th>Parameter</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% include 'books/includes/partial_area_mel_list.html' %}
+            </tbody>
+        </table>
+
+
+        <span class="section">Area  CL</span>
+
+        <p>
+            <button type="button" class="btn btn-primary js-create-book" data-url="{% url 'book_create' %}">
+                <span class="glyphicon glyphicon-plus"></span>
+                Add
+            </button>
+        </p>
+
+        <table class="table" id="book-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>company</th>
+                <th>point</th>
+                <th>work_unit</th>
+                <th>method</th>
+                <th>flow_rate</th>
+                <th>media</th>
+                <th>technique</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% include 'books/includes/partial_area_cl_list.html' %}
+            </tbody>
+        </table>
+
+
+        <span class="section">Area  TWA</span>
+
+        <p>
+            <button type="button" class="btn btn-primary js-create-book" data-url="{% url 'book_create' %}">
+                <span class="glyphicon glyphicon-plus"></span>
+                Add
+            </button>
+        </p>
+
+        <table class="table" id="book-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>company</th>
+                <th>point</th>
+                <th>work_unit</th>
+                <th>method</th>
+                <th>flow_rate</th>
+                <th>media</th>
+                <th>technique</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% include 'books/includes/partial_area_twa_list.html' %}
+            </tbody>
+        </table>
+
+    </form>
+</div>

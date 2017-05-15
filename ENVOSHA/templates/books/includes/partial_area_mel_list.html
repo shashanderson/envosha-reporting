@@ -1,4 +1,5 @@
 {% for area_mel in area_mel %}
+
 <tr>
     <td>{{ area_mel.point }}</td>
     <td>{{ area_mel.work_unit }}</td>
@@ -6,7 +7,7 @@
     <td>{{ area_mel.flow_rate }}</td>
     <td>{{ area_mel.media }}</td>
     <td>{{ area_mel.technique }}</td>
-    <td style="width: 290px">
+    <td>
         <button type="button"
                 class="btn btn-warning btn-sm js-update-book"
                 data-url="{% url 'book_update' area_mel.id %}">
@@ -17,21 +18,27 @@
                 data-url="{% url 'book_delete' area_mel.id %}">
             <span class="glyphicon glyphicon-trash"></span>
         </button>
-          <button type="button" class="btn btn-primary js-create-parameter" data-url="{% url 'parameter_create' %}">
+
+    </td>
+    <td >
+         <button  type="button" class="btn btn-primary js-create-parameter" data-url="{% url 'parameter_create' %}">
             <span class="glyphicon glyphicon-plus"></span>
 
         </button>
-    </td>
-    <td >
-        {% for area_mel_parameter in area_mel_parameter %}
-        {{ area_mel_parameter.parameter_value }}
+{% for area_mel_parameter in area_mel_parameter %}
+         <br/> {{ area_mel_parameter.parameter_value }}
+        <button type="button"
+                class="btn btn-warning btn-sm js-update-book"
+                data-url="{% url 'parameter_update' area_mel.id %}">
+            <span class="glyphicon glyphicon-pencil"></span>
+        </button>
         <button type="button"
                 class="btn btn-danger btn-sm js-delete-book"
-                data-url="{% url 'book_delete' area_mel.id %}">
+                data-url="{% url 'parameter_delete' area_mel.id %}">
             <span class="glyphicon glyphicon-trash"></span>
         </button>
-        {% endfor %}
 
+{% endfor %}
     </td>
 
 </tr>

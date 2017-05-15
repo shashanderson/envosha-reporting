@@ -1,0 +1,83 @@
+<div id="step-22">
+                <h2 class="StepTitle">Step 1.2 Add Personnel</h2>
+                <span class="section">Personnel MEL</span>
+                <p>
+                    <button type="button" class="btn btn-primary js-create-personal" data-url="{% url 'book_create' %}">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        New Personnel
+                    </button>
+                </p>
+
+                <table class="table" id="personal-table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>company</th>
+                        <th>point</th>
+                        <th>work_unit</th>
+                        <th>method</th>
+                        <th>flow_rate</th>
+                        <th>media</th>
+                        <th>technique</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% include 'books/includes/partial_personal_mel_list.html' %}
+                    </tbody>
+                </table>
+
+                <span class="section">Personnel CL</span>
+                <p>
+                    <button type="button" class="btn btn-primary js-create-personal" data-url="{% url 'book_create' %}">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        New Personnel
+                    </button>
+                </p>
+
+                <table class="table" id="personal-table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>company</th>
+                        <th>point</th>
+                        <th>work_unit</th>
+                        <th>method</th>
+                        <th>flow_rate</th>
+                        <th>media</th>
+                        <th>technique</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% include 'books/includes/partial_personal_cl_list.html' %}
+                    </tbody>
+                </table>
+
+                <span class="section">Personnel TWA</span>
+                <p>
+                    <button type="button" class="btn btn-primary js-create-personal" data-url="{% url 'book_create' %}">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        New Personnel
+                    </button>
+                </p>
+
+                <table class="table" id="personal-table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>company</th>
+                        <th>point</th>
+                        <th>work_unit</th>
+                        <th>method</th>
+                        <th>flow_rate</th>
+                        <th>media</th>
+                        <th>technique</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% include 'books/includes/partial_personal_twa_list.html' %}
+                    </tbody>
+                </table>
+            </div>
